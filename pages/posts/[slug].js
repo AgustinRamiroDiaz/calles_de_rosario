@@ -4,7 +4,6 @@ import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
@@ -17,7 +16,6 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -42,7 +40,6 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
-    </Layout>
   )
 }
 
