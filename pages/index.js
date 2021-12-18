@@ -13,6 +13,14 @@ export default function Index({ allPosts }) {
       <Head>
         <title>Calles de Rosario</title>
       </Head>
+      {/* {allPosts.map((post) => (
+        <h1>{post.title[0]}</h1>
+      ))}
+      {console.log(allPosts.reduce((postsSoFar, { title }) => {
+        if (!postsSoFar[title[0]]) postsSoFar[title[0]] = [];
+        postsSoFar[title[0]].push(title);
+        return postsSoFar;
+      }, {}))} */}
       <Container>
         <Intro />
         {heroPost && (
