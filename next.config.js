@@ -1,6 +1,6 @@
-const isProd = process.env.NODE_ENV === 'production'
+const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/calles_de_rosario/' : ''
+  assetPrefix: !debug ? '/Next-gh-page-example/' : '',
 }
