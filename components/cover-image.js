@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function CoverImage({ title, src, slug, height, width }) {
   const image = (
-    <img
+    <Image
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-sm', {
