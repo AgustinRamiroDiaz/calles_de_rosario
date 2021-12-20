@@ -1,4 +1,5 @@
 {
+  "homepage": "agustinramirodiaz.github.io/calles_de_rosario",
   "private": true,
   "scripts": {
     "dev": "next dev",
